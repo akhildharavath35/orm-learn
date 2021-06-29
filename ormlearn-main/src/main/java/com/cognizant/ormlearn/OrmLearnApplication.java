@@ -211,8 +211,8 @@ public class OrmLearnApplication {
 			Employee.builder().name("Akhil").salary(600000.00).permanent(true)
 					.dateOfBirth(new SimpleDateFormat("yyyy-MM-dd").parse("2019-09-01")).build();
 			Department department = departmentService.findDepartment(3);
-			Employee employee = Employee.builder().name("Shashi").salary(750000.00).permanent(false)
-					.dateOfBirth(new SimpleDateFormat("yyyy-MM-dd").parse("1993-07-02")).department(department).build();
+			Employee employee = Employee.builder().name("pavan").salary(750000.00).permanent(false)
+					.dateOfBirth(new SimpleDateFormat("yyyy-MM-dd").parse("1993-09-02")).department(department).build();
 			employeeService.saveEmployee(employee);
 			logger.info("Employee Details -> {}", employee);
 			logger.info("END... for Add Employee");
