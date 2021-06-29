@@ -208,7 +208,7 @@ public class OrmLearnApplication {
 	CommandLineRunner testAddEmployee() {
 		return args -> {
 			logger.info("START... for Add Employee");
-			Employee.builder().name("Anirudh").salary(600000.00).permanent(true)
+			Employee.builder().name("Akhil").salary(600000.00).permanent(true)
 					.dateOfBirth(new SimpleDateFormat("yyyy-MM-dd").parse("2019-09-01")).build();
 			Department department = departmentService.findDepartment(3);
 			Employee employee = Employee.builder().name("Shashi").salary(750000.00).permanent(false)
